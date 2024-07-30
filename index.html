@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4500;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #fffacd;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .question p {
+            font-size: 18px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .btn-submit {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background-color: #e03e00;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: #228b22;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fun Quiz</h1>
+    <div class="question">
+        <p>1. নীল নদীৰ দৈৰ্ঘ্য কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q1" value="0"> ৪,৬০০ কিঃমিঃ</li>
+            <li><input type="radio" name="q1" value="0"> ৫,৪০০ কিঃমিঃ</li>
+            <li><input type="radio" name="q1" value="1"> ৬,৪০০ কিঃমিঃ</li>
+            <li><input type="radio" name="q1" value="0"> ৬,৬০০ কিঃমিঃ</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>2. স্বাধীনতা সংগ্ৰাম কিমান বছৰ চলিছিল?</p>
+        <ul class="options">
+            <li><input type="radio" name="q2" value="0"> ৬০</li>
+            <li><input type="radio" name="q2" value="0"> ৫০</li>
+            <li><input type="radio" name="q2" value="0"> ৮০</li>
+            <li><input type="radio" name="q2" value="1"> ৯০</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>3. কোনটো আনন্দ চন্দ্ৰ আগৰৱালাৰ সাহিত্যিক অৱদান নহয়?</p>
+        <ul class="options">
+            <li><input type="radio" name="q3" value="0"> জিলিকণি</li>
+            <li><input type="radio" name="q3" value="0"> আদিপাঠ</li>
+            <li><input type="radio" name="q3" value="1"> জোনাকী</li>
+            <li><input type="radio" name="q3" value="0"> কোমল পাঠ</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>4. জ্যোতিপ্ৰসাদ আগৰৱালাই তেজপুৰ চৰকাৰী হাই্কুলত নাম লগাইছিল কিমান চনত?</p>
+        <ul class="options">
+            <li><input type="radio" name="q4" value="0"> ১৯২৯</li>
+            <li><input type="radio" name="q4" value="1"> ১৯১৯</li>
+            <li><input type="radio" name="q4" value="0"> ১৯৩৯</li>
+            <li><input type="radio" name="q4" value="0"> ১৯৪৯</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>5. ছাত্ৰ সংহতি দিৱস?</p>
+        <ul class="options">
+            <li><input type="radio" name="q5" value="0"> ১০ মে</li>
+            <li><input type="radio" name="q5" value="1"> ১০ জুন</li>
+            <li><input type="radio" name="q5" value="0"> ২৩ জুলাই</li>
+            <li><input type="radio" name="q5" value="0"> ২০ জুন</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>6. বিষ্ণু ৰাভা দিৱস</p>
+        <ul class="options">
+            <li><input type="radio" name="q6" value="0"> ২১ জুন</li>
+            <li><input type="radio" name="q6" value="1"> ২০ জুন</li>
+            <li><input type="radio" name="q6" value="0"> ২১ জুলাই</li>
+            <li><input type="radio" name="q6" value="0"> ২০ জুলাই</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>7. ৰাষ্ট্ৰ সংঘ দিৱস?</p>
+        <ul class="options">
+            <li><input type="radio" name="q7" value="0"> ২৪ জুলাই</li>
+            <li><input type="radio" name="q7" value="0"> ২৩ আগষ্ট</li>
+            <li><input type="radio" name="q7" value="1"> ২৪ অক্টোবৰ</li>
+            <li><input type="radio" name="q7" value="0"> ২৩ জুলাই</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>8. ৰাষ্ট্ৰীয় যুৱ দিৱস</p>
+        <ul class="options">
+            <li><input type="radio" name="q8" value="1"> ১২ জানুৱাৰী</li>
+            <li><input type="radio" name="q8" value="0"> ১২ জুন</li>
+            <li><input type="radio" name="q8" value="0"> ১১ জানুৱাৰী</li>
+            <li><input type="radio" name="q8" value="0"> ১০ জানুৱাৰী</li>
+        </ul>
+    </div>
+   
+    <div class="question">
+        <p>13. ৭ + ৫ কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q13" value="0"> ১০</li>
+            <li><input type="radio" name="q13" value="1"> ১২</li>
+            <li><input type="radio" name="q13" value="0"> ১৪</li>
+            <li><input type="radio" name="q13" value="0"> ১৫</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>14. ২৩ আৰু ৩২ ৰ ভিতৰত কোনটো সংখ্যা বেছিকৈ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q14" value="0"> ২৩</li>
+            <li><input type="radio" name="q14" value="1"> ৩২</li>
+            <li><input type="radio" name="q14" value="0"> দুয়ো সমান</li>
+            <li><input type="radio" name="q14" value="0"> কোনোখনো নহয়</li>
+        </ul>
+    </div>
+<div class="question">
+        <p>15. ৯ - ৪ কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q15" value="0"> ৩</li>
+            <li><input type="radio" name="q15" value="0"> ৪</li>
+            <li><input type="radio" name="q15" value="1"> ৫</li>
+            <li><input type="radio" name="q15" value="0"> ৬</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>16. কোনটো আকৃতিৰ ৪ টা সমান দিশ থাকে?</p>
+        <ul class="options">
+            <li><input type="radio" name="q16" value="0"> ত্ৰিভুজ</li>
+            <li><input type="radio" name="q16" value="1"> বৰ্গ</li>
+            <li><input type="radio" name="q16" value="0"> আয়তক্ষেত্ৰ</li>
+            <li><input type="radio" name="q16" value="0"> বৃত্ত</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>17. সংখ্যা ৩৫৬ ত ৫ ৰ স্থানীয় মান কি?</p>
+        <ul class="options">
+            <li><input type="radio" name="q17" value="0"> ৫</li>
+            <li><input type="radio" name="q17" value="1"> ৫০</li>
+            <li><input type="radio" name="q17" value="0"> ৫০০</li>
+            <li><input type="radio" name="q17" value="0"> ৫,০০০</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>18. তোমাৰ ৩ টা আপেল আছে আৰু তুমি ২ টা আৰু কিনা, মুঠে কিমান আপেল হব?</p>
+        <ul class="options">
+            <li><input type="radio" name="q18" value="0"> ৩</li>
+            <li><input type="radio" name="q18" value="0"> ৪</li>
+            <li><input type="radio" name="q18" value="1"> ৫</li>
+            <li><input type="radio" name="q18" value="0"> ৬</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>19. ১০ ক ২ দিয়া কিমান হব?</p>
+        <ul class="options">
+            <li><input type="radio" name="q19" value="0"> ২</li>
+            <li><input type="radio" name="q19" value="0"> ৩</li>
+            <li><input type="radio" name="q19" value="0"> ৪</li>
+            <li><input type="radio" name="q19" value="1"> ৫</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>20. তলৰ কোনটো সংখ্যাটো যুগ্ম সংখ্যা?</p>
+        <ul class="options">
+            <li><input type="radio" name="q20" value="0"> ৭</li>
+            <li><input type="radio" name="q20" value="1"> ৮</li>
+            <li><input type="radio" name="q20" value="0"> ৯</li>
+            <li><input type="radio" name="q20" value="0"> ১১</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>21. এক পেণ্টাগনৰ কিমানটা দিশ থাকে?</p>
+        <ul class="options">
+            <li><input type="radio" name="q21" value="0"> ৩</li>
+            <li><input type="radio" name="q21" value="0"> ৪</li>
+            <li><input type="radio" name="q21" value="1"> ৫</li>
+            <li><input type="radio" name="q21" value="0"> ৬</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>22. ৬ × ৩ কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q22" value="0"> ১৫</li>
+            <li><input type="radio" name="q22" value="1"> ১৮</li>
+            <li><input type="radio" name="q22" value="0"> ২০</li>
+            <li><input type="radio" name="q22" value="0"> ২৪</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>23. ১/২ টা চকলেটৰ অৰ্থ কি?</p>
+        <ul class="options">
+            <li><input type="radio" name="q23" value="0"> ১টা</li>
+            <li><input type="radio" name="q23" value="0"> ২টা</li>
+            <li><input type="radio" name="q23" value="1"> ১/২ টা</li>
+            <li><input type="radio" name="q23" value="0"> ১/৩ টা</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>24. ১০০ ৰ ১০% কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q24" value="0"> ৫</li>
+            <li><input type="radio" name="q24" value="1"> ১০</li>
+            <li><input type="radio" name="q24" value="0"> ২০</li>
+            <li><input type="radio" name="q24" value="0"> ৩০</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>25. তলৰ কোনটো অশুদ্ধ? ৫ × ৬ = ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q25" value="0"> ৩০</li>
+            <li><input type="radio" name="q25" value="0"> ৩৫</li>
+            <li><input type="radio" name="q25" value="0"> ২৫</li>
+            <li><input type="radio" name="q25" value="1"> ৪০</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>26. কোনটো সংখ্যা অড সংখ্যা?</p>
+        <ul class="options">
+            <li><input type="radio" name="q26" value="0"> ২</li>
+            <li><input type="radio" name="q26" value="0"> ৪</li>
+            <li><input type="radio" name="q26" value="0"> ৬</li>
+            <li><input type="radio" name="q26" value="1"> ৯</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>27. যদি ২৭ + ৩ = ৩০, তেন্তে ৩০ - ৩ = ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q27" value="0"> ২৫</li>
+            <li><input type="radio" name="q27" value="0"> ২৬</li>
+            <li><input type="radio" name="q27" value="1"> ২৭</li>
+            <li><input type="radio" name="q27" value="0"> ২৮</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>28. এক যন্ত্ৰণাৰ সংখ্যা ১০০ - ৫০ = ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q28" value="0"> ২৫</li>
+            <li><input type="radio" name="q28" value="0"> ৩০</li>
+            <li><input type="radio" name="q28" value="0"> ৪০</li>
+            <li><input type="radio" name="q28" value="1"> ৫০</li>
+        </ul>
+    </div>
+   <div class="question">
+        <p>15. ৯ - ৪ কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q15" value="0"> ৩</li>
+            <li><input type="radio" name="q15" value="0"> ৪</li>
+            <li><input type="radio" name="q15" value="1"> ৫</li>
+            <li><input type="radio" name="q15" value="0"> ৬</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>16. কোনটো আকৃতিৰ ৪ টা সমান দিশ থাকে?</p>
+        <ul class="options">
+            <li><input type="radio" name="q16" value="0"> ত্ৰিভুজ</li>
+            <li><input type="radio" name="q16" value="1"> বৰ্গ</li>
+            <li><input type="radio" name="q16" value="0"> আয়তক্ষেত্ৰ</li>
+            <li><input type="radio" name="q16" value="0"> বৃত্ত</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>17. সংখ্যা ৩৫৬ ত ৫ ৰ স্থানীয় মান কি?</p>
+        <ul class="options">
+            <li><input type="radio" name="q17" value="0"> ৫</li>
+            <li><input type="radio" name="q17" value="1"> ৫০</li>
+            <li><input type="radio" name="q17" value="0"> ৫০০</li>
+            <li><input type="radio" name="q17" value="0"> ৫,০০০</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>18. তোমাৰ ৩ টা আপেল আছে আৰু তুমি ২ টা আৰু কিনা, মুঠে কিমান আপেল হব?</p>
+        <ul class="options">
+            <li><input type="radio" name="q18" value="0"> ৩</li>
+            <li><input type="radio" name="q18" value="0"> ৪</li>
+            <li><input type="radio" name="q18" value="1"> ৫</li>
+            <li><input type="radio" name="q18" value="0"> ৬</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>19. ১০ ক ২ দিয়া কিমান হব?</p>
+        <ul class="options">
+            <li><input type="radio" name="q19" value="0"> ২</li>
+            <li><input type="radio" name="q19" value="0"> ৩</li>
+            <li><input type="radio" name="q19" value="0"> ৪</li>
+            <li><input type="radio" name="q19" value="1"> ৫</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>20. তলৰ কোনটো সংখ্যাটো যুগ্ম সংখ্যা?</p>
+        <ul class="options">
+            <li><input type="radio" name="q20" value="0"> ৭</li>
+            <li><input type="radio" name="q20" value="1"> ৮</li>
+            <li><input type="radio" name="q20" value="0"> ৯</li>
+            <li><input type="radio" name="q20" value="0"> ১১</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>21. এক পেণ্টাগনৰ কিমানটা দিশ থাকে?</p>
+        <ul class="options">
+            <li><input type="radio" name="q21" value="0"> ৩</li>
+            <li><input type="radio" name="q21" value="0"> ৪</li>
+            <li><input type="radio" name="q21" value="1"> ৫</li>
+            <li><input type="radio" name="q21" value="0"> ৬</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>22. ৬ × ৩ কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q22" value="0"> ১৫</li>
+            <li><input type="radio" name="q22" value="1"> ১৮</li>
+            <li><input type="radio" name="q22" value="0"> ২০</li>
+            <li><input type="radio" name="q22" value="0"> ২৪</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>23. ১/২ টা চকলেটৰ অৰ্থ কি?</p>
+        <ul class="options">
+            <li><input type="radio" name="q23" value="0"> ১টা</li>
+            <li><input type="radio" name="q23" value="0"> ২টা</li>
+            <li><input type="radio" name="q23" value="1"> ১/২ টা</li>
+            <li><input type="radio" name="q23" value="0"> ১/৩ টা</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>24. ১০০ ৰ ১০% কিমান?</p>
+        <ul class="options">
+            <li><input type="radio" name="q24" value="0"> ৫</li>
+            <li><input type="radio" name="q24" value="1"> ১০</li>
+            <li><input type="radio" name="q24" value="0"> ২০</li>
+            <li><input type="radio" name="q24" value="0"> ৩০</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>25. তলৰ কোনটো অশুদ্ধ? ৫ × ৬ = ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q25" value="0"> ৩০</li>
+            <li><input type="radio" name="q25" value="0"> ৩৫</li>
+            <li><input type="radio" name="q25" value="0"> ২৫</li>
+            <li><input type="radio" name="q25" value="1"> ৪০</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>26. কোনটো সংখ্যা অড সংখ্যা?</p>
+        <ul class="options">
+            <li><input type="radio" name="q26" value="0"> ২</li>
+            <li><input type="radio" name="q26" value="0"> ৪</li>
+            <li><input type="radio" name="q26" value="0"> ৬</li>
+            <li><input type="radio" name="q26" value="1"> ৯</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>27. যদি ২৭ + ৩ = ৩০, তেন্তে ৩০ - ৩ = ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q27" value="0"> ২৫</li>
+            <li><input type="radio" name="q27" value="0"> ২৬</li>
+            <li><input type="radio" name="q27" value="1"> ২৭</li>
+            <li><input type="radio" name="q27" value="0"> ২৮</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>28. এক যন্ত্ৰণাৰ সংখ্যা ১০০ - ৫০ = ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q28" value="0"> ২৫</li>
+            <li><input type="radio" name="q28" value="0"> ৩০</li>
+            <li><input type="radio" name="q28" value="0"> ৪০</li>
+            <li><input type="radio" name="q28" value="1"> ৫০</li>
+        </ul>
+    </div>
+<div class="question">
+        <p>29. সংখ্যা ৫৮০ ৰ ।সৰ্বাধিক সংখ্যা কি?</p>
+        <ul class="options">
+            <li><input type="radio" name="q29" value="0"> ৮০</li>
+            <li><input type="radio" name="q29" value="1"> ৫৮</li>
+            <li><input type="radio" name="q29" value="0"> ৮৫</li>
+            <li><input type="radio" name="q29" value="0"> ৫০৮</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>30. ৫ টা বেঞ্চত মুঠ ২৫ জন ছাত্ৰ বহা যায় তেন্তে এটা বেঞ্চত কিমান জন বহা যায়?</p>
+        <ul class="options">
+            <li><input type="radio" name="q30" value="0"> ৪</li>
+            <li><input type="radio" name="q30" value="1"> ৫</li>
+            <li><input type="radio" name="q30" value="0"> ৬</li>
+            <li><input type="radio" name="q30" value="0"> ৭</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>31. কোনটো সংখ্যাৰ ভগ্নাংশ ২/৪ = ?</p>
+        <ul class="options">
+            <li><input type="radio" name="q31" value="1"> ১/২</li>
+            <li><input type="radio" name="q31" value="0"> ৩/৪</li>
+            <li><input type="radio" name="q31" value="0"> ১/৩</li>
+            <li><input type="radio" name="q31" value="0"> ১/৪</li>
+        </ul>
+    </div>
+    <div class="question">
+        <p>32. এটা বৃত্তৰ কিমানটা দিশ থাকে?</p>
+        <ul class="options">
+            <li><input type="radio" name="q32" value="1"> ০</li>
+            <li><input type="radio" name="q32" value="0"> ১</li>
+            <li><input type="radio" name="q32" value="0"> ২</li>
+            <li><input type="radio" name="q32" value="0"> ৩</li>
+        </ul>
+    </div>
+    
+
+<!-- Custom input questions -->
+<div class="question">
+    <p>9. বিশ্ব পৰ্যটক দিৱস:</p>
+    <input type="text" id="q9" placeholder="Answer in numbers">
+    <div class="input-result" id="result9"></div>
+</div>
+<div class="question">
+    <p>10. পতাকা দিৱস:</p>
+    <input type="text" id="q10" placeholder="Answer in numbers">
+    <div class="input-result" id="result10"></div>
+</div>
+<div class="question">
+    <p>11. কালিৰাম মেধি সভাপতি কৰা চন:</p>
+    <input type="text" id="q11" placeholder="Answer in numbers">
+    <div class="input-result" id="result11"></div>
+</div>
+<div class="question">
+    <p>12. লক্ষ্মীনাথ বেজবৰুৱাৰ সভাপতি কৰা চন:</p>
+    <input type="text" id="q12" placeholder="Answer in numbers">
+    <div class="input-result" id="result12"></div>
+</div>
+<div class="question">
+    <p>29. সংখ্যা ৫৮০ ৰ ।সৰ্বাধিক সংখ্যা কি?</p>
+    <ul class="options">
+        <li><input type="radio" name="q29" value="0"> ৮০</li>
+        <li><input type="radio" name="q29" value="1"> ৫৮</li>
+        <li><input type="radio" name="q29" value="0"> ৮৫</li>
+        <li><input type="radio" name="q29" value="0"> ৫০৮</li>
+    </ul>
+</div>
+<div class="question">
+    <p>30. ৫ টা বেঞ্চত মুঠ ২৫ জন ছাত্ৰ বহা যায় তেন্তে এটা বেঞ্চত কিমান জন বহা যায়?</p>
+    <ul class="options">
+        <li><input type="radio" name="q30" value="0"> ৪</li>
+        <li><input type="radio" name="q30" value="1"> ৫</li>
+        <li><input type="radio" name="q30" value="0"> ৬</li>
+        <li><input type="radio" name="q30" value="0"> ৭</li>
+    </ul>
+</div>
+<div class="question">
+    <p>31. কোনটো সংখ্যাৰ ভগ্নাংশ ২/৪ = ?</p>
+    <ul class="options">
+        <li><input type="radio" name="q31" value="1"> ১/২</li>
+        <li><input type="radio" name="q31" value="0"> ৩/৪</li>
+        <li><input type="radio" name="q31" value="0"> ১/৩</li>
+        <li><input type="radio" name="q31" value="0"> ১/৪</li>
+    </ul>
+</div>
+<div class="question">
+    <p>32. এটা বৃত্তৰ কিমানটা দিশ থাকে?</p>
+    <ul class="options">
+        <li><input type="radio" name="q32" value="1"> ০</li>
+        <li><input type="radio" name="q32" value="0"> ১</li>
+        <li><input type="radio" name="q32" value="0"> ২</li>
+        <li><input type="radio" name="q32" value="0"> ৩</li>
+    </ul>
+</div>
+<button class="btn-submit" onclick="verifyAnswers()">Submit</button>
+<div class="result"></div>
+
+<script>
+    function calculateScore() {
+        const questions = document.querySelectorAll('.question');
+        let score = 0;
+        questions.forEach(question => {
+            const options = question.querySelectorAll('input[type="radio"]');
+            options.forEach(option => {
+                if (option.checked && option.value == '1') {
+                    score += 1;
+                }
+            });
+        });
+        return score;
+    }
+
+    function verifyAnswers() {
+        const answers = {
+            q9: "২৭",
+            q10: "৭",
+            q11: "১৯১৯",
+            q12: "১৯২৪"
+        };
+
+        let score = 0;
+        for (const [key, value] of Object.entries(answers)) {
+            const userAnswer = document.getElementById(key).value.trim();
+            const resultElement = document.getElementById(`result${key.slice(1)}`);
+            if (userAnswer === value) {
+                score++;
+                resultElement.textContent = "Correct!";
+            } else {
+                resultElement.textContent = `Incorrect. Correct answer: ${value}`;
+            }
+        }
+
+        const radioScore = calculateScore();
+        const totalScore = score + radioScore;
+        document.querySelector('.result').innerHTML = `<h2>Your total score is: ${totalScore} out of 33</h2>`;
+
+        showPopup(totalScore);
+    }
+
+    function showPopup(score) {
+        const popup = document.createElement('div');
+        popup.style.position = 'fixed';
+        popup.style.left = '50%';
+        popup.style.top = '50%';
+        popup.style.transform = 'translate(-50%, -50%)';
+        popup.style.padding = '20px';
+        popup.style.backgroundColor = 'white';
+        popup.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+        popup.style.borderRadius = '10px';
+        popup.style.zIndex = '1000';
+
+        const message = document.createElement('p');
+        message.style.fontSize = '18px';
+        message.style.margin = '0';
+        message.textContent = `Congratulations! You scored ${score} out of 33! 🎉✨`;
+
+        const closeButton = document.createElement('button');
+        closeButton.style.marginTop = '20px';
+        closeButton.textContent = 'Close';
+        closeButton.onclick = () => {
+            document.body.removeChild(popup);
+        };
+
+        popup.appendChild(message);
+        popup.appendChild(closeButton);
+        document.body.appendChild(popup);
+    }
+</script>
